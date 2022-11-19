@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
   
 import Posts from "./components/Posts/Posts";
+import login from "../components/login/login";
   
 const App = () => {
   return (
