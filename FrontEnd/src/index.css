@@ -19,14 +19,14 @@ h1 {
   font-family: Arial;
 }
 
-.bulb {
-	width: 60%;
-	height: 5%;
+.logo {
+	width: 2px;
+	height: 2px;
   display: flex;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 

@@ -1,19 +1,24 @@
 import React from "react";
+import {BrowserRouter as Router,
+  Route,Routes,}
+  from "react-router-dom";
 import "./App.css";
   
 import Posts from "./components/Posts/Posts";
-import login from "../components/login/login";
+import Navbar from "./components/navbar/navbar";
   
 const App = () => {
   return (
-    <div className="main-container">
-      <h1 className="main-heading" >
-        Blog2
-      </h1>
-      <img className="bulb" src="https://img.freepik.com/premium-photo/woman-works-office-blue-background-concept-workspace-working-computer-freelance-banner_164357-1144.jpg?w=2000" alt="!!!" />
-      <div className="post-container"><Posts /></div>
+    <Router>
+      <div className="main-container">
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Posts />} />
+      </Routes>
+      
     </div>
-    
+
+    </Router>
   );
 };
 
